@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo-APP</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./test.js" defer></script>
+  </head>
+  <body>
+    <section class="todo">
+      <h2>To-do list</h2>
+      <div class="input-container">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="Add a task..."
+        />
+        <button class="add-button">Add</button>
+      </div>
+      <ul class="scroll">
+        <li id="todoList"></li>
+      </ul>
+      <div>
+        <hr class="counter" />
+        <div class="counter-container">
+          <p><span id="todoCount">0</span> items total</p>
+          <button id="deleteAllButton">Delete All</button>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      Developed by
+      <a href="https://github.com/theo-abhi" target="_blank">theo-abhi</a>
+    </footer>
+  </body>
+</html>
